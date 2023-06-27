@@ -1,0 +1,11 @@
+1) To execute all the testCases
+robot TestCases\
+
+2) Using regular expression to execute
+robot TestCases\Reg*
+* means the file names containing Reg will be executed
+
+3) To execute Test scenarios parallely - we need to install - pip install -U robotframework-pabot
+Command - pabot --processes 2 TestCases\*.robot
+
+Command to save with reports ->  pabot --processes 2 --outputdir Reports TestCases\*.robot

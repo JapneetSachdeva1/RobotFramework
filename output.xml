@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 6.1 (Python 3.11.3 on win32)" generated="20230627 15:17:43.302" rpa="false" schemaversion="4">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="LoginTests" source="C:\Users\Japneet Sachdeva\PycharmProjects\robotPOM\TestCases\LoginTests.robot">
+<test id="s1-s1-t1" name="LoginTestWithCSV" line="10">
+<kw name="Invalid and Valid Login Tests">
+<arg>Admin</arg>
+<arg> admin</arg>
+<kw name="UserLogin" library="resources_loginPage">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<kw name="OpenApplication" library="utils">
+<arg>${APP_URL}</arg>
+<arg>${BROWSER_NAME}</arg>
+<arg>${TITLE}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${APP_URL}</arg>
+<arg>${BROWSER_NAME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230627 15:17:06.928" level="INFO">Opening browser 'Chrome' to base url 'https://naveenautomationlabs.com/opencart/index.php?route=account/login'.</msg>
+<msg timestamp="20230627 15:17:06.942" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230627 15:17:06.928" endtime="20230627 15:17:10.036"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230627 15:17:10.036" endtime="20230627 15:17:10.151"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${page_title}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230627 15:17:10.152" endtime="20230627 15:17:10.165"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:06.928" endtime="20230627 15:17:10.165"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_text}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:10.166" level="INFO">Typing text 'Admin' into text field 'id:input-email'.</msg>
+<status status="PASS" starttime="20230627 15:17:10.165" endtime="20230627 15:17:10.279"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${pswd_text}</arg>
+<arg>${pswd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:10.280" level="INFO">Typing text ' admin' into text field 'id:input-password'.</msg>
+<status status="PASS" starttime="20230627 15:17:10.279" endtime="20230627 15:17:10.380"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:10.381" level="INFO">Clicking element 'xpath://input[@value='Login']'.</msg>
+<status status="PASS" starttime="20230627 15:17:10.380" endtime="20230627 15:17:10.624"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230627 15:17:12.625" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230627 15:17:10.625" endtime="20230627 15:17:12.625"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:06.927" endtime="20230627 15:17:12.625"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:06.927" endtime="20230627 15:17:12.625"/>
+</kw>
+<kw name="CloseBrowserWindow" library="utils" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230627 15:17:12.627" endtime="20230627 15:17:18.832"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:12.625" endtime="20230627 15:17:18.832"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:06.926" endtime="20230627 15:17:18.832"/>
+</test>
+<test id="s1-s1-t2" name="LoginTestWithCSV" line="10">
+<kw name="Invalid and Valid Login Tests">
+<arg>admin</arg>
+<arg> admin123</arg>
+<kw name="UserLogin" library="resources_loginPage">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<kw name="OpenApplication" library="utils">
+<arg>${APP_URL}</arg>
+<arg>${BROWSER_NAME}</arg>
+<arg>${TITLE}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${APP_URL}</arg>
+<arg>${BROWSER_NAME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230627 15:17:18.848" level="INFO">Opening browser 'Chrome' to base url 'https://naveenautomationlabs.com/opencart/index.php?route=account/login'.</msg>
+<msg timestamp="20230627 15:17:18.848" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230627 15:17:18.848" endtime="20230627 15:17:21.391"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230627 15:17:21.391" endtime="20230627 15:17:21.512"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${page_title}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230627 15:17:21.512" endtime="20230627 15:17:21.526"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:18.848" endtime="20230627 15:17:21.526"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_text}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:21.527" level="INFO">Typing text 'admin' into text field 'id:input-email'.</msg>
+<status status="PASS" starttime="20230627 15:17:21.526" endtime="20230627 15:17:21.603"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${pswd_text}</arg>
+<arg>${pswd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:21.619" level="INFO">Typing text ' admin123' into text field 'id:input-password'.</msg>
+<status status="PASS" starttime="20230627 15:17:21.618" endtime="20230627 15:17:21.684"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:21.685" level="INFO">Clicking element 'xpath://input[@value='Login']'.</msg>
+<status status="PASS" starttime="20230627 15:17:21.684" endtime="20230627 15:17:21.940"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230627 15:17:23.942" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230627 15:17:21.941" endtime="20230627 15:17:23.942"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:18.848" endtime="20230627 15:17:23.942"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:18.845" endtime="20230627 15:17:23.943"/>
+</kw>
+<kw name="CloseBrowserWindow" library="utils" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230627 15:17:23.943" endtime="20230627 15:17:30.168"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:23.943" endtime="20230627 15:17:30.168"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:18.832" endtime="20230627 15:17:30.168"/>
+</test>
+<test id="s1-s1-t3" name="LoginTestWithCSV" line="10">
+<kw name="Invalid and Valid Login Tests">
+<arg>alpha</arg>
+<arg> alpha</arg>
+<kw name="UserLogin" library="resources_loginPage">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<kw name="OpenApplication" library="utils">
+<arg>${APP_URL}</arg>
+<arg>${BROWSER_NAME}</arg>
+<arg>${TITLE}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${APP_URL}</arg>
+<arg>${BROWSER_NAME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230627 15:17:30.168" level="INFO">Opening browser 'Chrome' to base url 'https://naveenautomationlabs.com/opencart/index.php?route=account/login'.</msg>
+<msg timestamp="20230627 15:17:30.184" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230627 15:17:30.168" endtime="20230627 15:17:34.114"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230627 15:17:34.114" endtime="20230627 15:17:34.234"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${page_title}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230627 15:17:34.234" endtime="20230627 15:17:34.250"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:30.168" endtime="20230627 15:17:34.250"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_text}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:34.250" level="INFO">Typing text 'alpha' into text field 'id:input-email'.</msg>
+<status status="PASS" starttime="20230627 15:17:34.250" endtime="20230627 15:17:34.340"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${pswd_text}</arg>
+<arg>${pswd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:34.340" level="INFO">Typing text ' alpha' into text field 'id:input-password'.</msg>
+<status status="PASS" starttime="20230627 15:17:34.340" endtime="20230627 15:17:34.406"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:34.406" level="INFO">Clicking element 'xpath://input[@value='Login']'.</msg>
+<status status="PASS" starttime="20230627 15:17:34.406" endtime="20230627 15:17:34.839"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230627 15:17:36.840" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230627 15:17:34.839" endtime="20230627 15:17:36.840"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:30.168" endtime="20230627 15:17:36.840"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:30.168" endtime="20230627 15:17:36.840"/>
+</kw>
+<kw name="CloseBrowserWindow" library="utils" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230627 15:17:36.840" endtime="20230627 15:17:43.081"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:36.840" endtime="20230627 15:17:43.081"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:30.168" endtime="20230627 15:17:43.081"/>
+</test>
+<status status="PASS" starttime="20230627 15:17:06.581" endtime="20230627 15:17:43.081"/>
+</suite>
+<suite id="s1-s2" name="RegistrationTests" source="C:\Users\Japneet Sachdeva\PycharmProjects\robotPOM\TestCases\RegistrationTests.robot">
+<test id="s1-s2-t1" name="ValidRegistrationTest" line="8">
+<kw name="UserRegistration" library="resources_registrationPage">
+<arg>alpha</arg>
+<arg>beta</arg>
+<arg>beta@email.com</arg>
+<arg>1231231231</arg>
+<arg>admin123</arg>
+<kw name="OpenApplication" library="utils">
+<arg>${APP_URL}</arg>
+<arg>${BROWSER_NAME}</arg>
+<arg>${TITLE}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${APP_URL}</arg>
+<arg>${BROWSER_NAME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230627 15:17:06.898" level="INFO">Opening browser 'Chrome' to base url 'https://naveenautomationlabs.com/opencart/index.php?route=account/register'.</msg>
+<msg timestamp="20230627 15:17:06.912" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230627 15:17:06.898" endtime="20230627 15:17:09.999"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230627 15:17:09.999" endtime="20230627 15:17:10.119"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${page_title}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230627 15:17:10.120" endtime="20230627 15:17:10.134"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:06.897" endtime="20230627 15:17:10.134"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${firstName_txt}</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:10.135" level="INFO">Typing text 'alpha' into text field 'id:input-firstname'.</msg>
+<status status="PASS" starttime="20230627 15:17:10.134" endtime="20230627 15:17:10.244"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${lastName_txt}</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:10.245" level="INFO">Typing text 'beta' into text field 'id:input-lastname'.</msg>
+<status status="PASS" starttime="20230627 15:17:10.245" endtime="20230627 15:17:10.331"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_txt}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:10.333" level="INFO">Typing text 'beta@email.com' into text field '//input[@id='input-email']'.</msg>
+<status status="PASS" starttime="20230627 15:17:10.332" endtime="20230627 15:17:10.457"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${telephone_txt}</arg>
+<arg>${telephone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:10.458" level="INFO">Typing text '1231231231' into text field '//input[@id='input-telephone']'.</msg>
+<status status="PASS" starttime="20230627 15:17:10.457" endtime="20230627 15:17:10.539"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password_txt}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:10.539" level="INFO">Typing text 'admin123' into text field '//input[@id='input-password']'.</msg>
+<status status="PASS" starttime="20230627 15:17:10.539" endtime="20230627 15:17:10.604"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password_confirm_txt}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:10.605" level="INFO">Typing text 'admin123' into text field '//input[@id='input-confirm']'.</msg>
+<status status="PASS" starttime="20230627 15:17:10.604" endtime="20230627 15:17:10.687"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${agree_checkbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:10.688" level="INFO">Clicking element '//input[@name='agree']'.</msg>
+<status status="PASS" starttime="20230627 15:17:10.687" endtime="20230627 15:17:10.729"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${continue_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230627 15:17:10.730" level="INFO">Clicking element '//input[@value='Continue']'.</msg>
+<status status="PASS" starttime="20230627 15:17:10.729" endtime="20230627 15:17:11.164"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230627 15:17:13.165" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230627 15:17:11.164" endtime="20230627 15:17:13.165"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:06.897" endtime="20230627 15:17:13.165"/>
+</kw>
+<kw name="CloseBrowserWindow" library="utils" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230627 15:17:13.165" endtime="20230627 15:17:19.401"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:13.165" endtime="20230627 15:17:19.401"/>
+</kw>
+<status status="PASS" starttime="20230627 15:17:06.896" endtime="20230627 15:17:19.401"/>
+</test>
+<status status="PASS" starttime="20230627 15:17:06.582" endtime="20230627 15:17:19.401"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 2 executions.</doc>
+<status status="PASS" starttime="20230627 15:17:06.564" endtime="20230627 15:17:43.081"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="LoginTests">Suites.LoginTests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="RegistrationTests">Suites.RegistrationTests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230627 15:17:18.832" level="WARN">Multiple tests with name 'LoginTestWithCSV' executed in suite 'Suites.LoginTests'.</msg>
+<msg timestamp="20230627 15:17:30.168" level="WARN">Multiple tests with name 'LoginTestWithCSV' executed in suite 'Suites.LoginTests'.</msg>
+</errors>
+</robot>

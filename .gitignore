@@ -1,0 +1,10 @@
+# file: ~/.gitignore_global
+.DS_Store
+.idea
+.project-root
+.pytest_cache
+__pycache__
+pabot_results
+.git
+.pabotsuitenames
+

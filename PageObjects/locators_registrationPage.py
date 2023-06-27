@@ -1,0 +1,8 @@
+firstName_txt = "id:input-firstname"
+lastName_txt = "id:input-lastname"
+email_txt = "//input[@id='input-email']"
+telephone_txt = "//input[@id='input-telephone']"
+password_txt = "//input[@id='input-password']"
+password_confirm_txt = "//input[@id='input-confirm']"
+agree_checkbox = "//input[@name='agree']"
+continue_btn = "//input[@value='Continue']"
