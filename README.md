@@ -17,3 +17,4 @@ This framework uses following:
 10) Test scenarios are stored in TestCases
 11) Common utilities stored in Utilities
 12) Reports are stored in Reports
+13) Pabot for parallel execution of test scenarios
